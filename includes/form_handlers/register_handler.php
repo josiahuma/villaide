@@ -56,7 +56,7 @@ if(isset($_POST['register_button'])){
             $num_rows = mysqli_num_rows($e_check);
 
             if($num_rows > 0) {
-                array_push($error_array, "Email already in use <br>");
+                array_push($error_array, "Email already in use<br>");
             }
         
         }
@@ -65,7 +65,7 @@ if(isset($_POST['register_button'])){
         }
     }
     else{
-        array_push($error_array, "Emails dont match<br>");
+        array_push($error_array, "Emails don't match<br>");
     }
 
     if(strlen($fname) > 25 || strlen($fname) < 2) {
