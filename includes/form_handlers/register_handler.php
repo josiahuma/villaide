@@ -105,12 +105,18 @@ if(isset($_POST['register_button'])){
        }
 
         //Profile picture assignment
-        $rand = rand(1,2); //Random number between 1 and 2
+        $rand = rand(1,5); //Random number between 1 and 2
 
         if($rand == 1)
             $profile_pic = "assets/images/profile_pics/defaults/head_deep_blue.png";
         else if($rand == 2)
            $profile_pic = "assets/images/profile_pics/defaults/head_carrot.png";
+        else if($rand == 3)
+           $profile_pic = "assets/images/profile_pics/defaults/head_nephritis.png";
+        else if($rand == 4)
+           $profile_pic = "assets/images/profile_pics/defaults/head_wisteria.png";
+        else if($rand == 5)
+           $profile_pic = "assets/images/profile_pics/defaults/head_pomegranate.png";
 
         $query = mysqli_query($con, "INSERT INTO users VALUE('', '$fname', '$lname', '$username', '$email', '$password', '$date', '$profile_pic', '0', '0', 'no', ',')");
        

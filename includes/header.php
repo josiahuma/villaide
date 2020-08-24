@@ -52,12 +52,12 @@ else {
                 <i class="icon-bell icon-large"></i>
             </a>
             <a href="#">
-                <i class="icon-users icon-large"></i>
+                <i class="icon-group icon-large"></i>
             </a>
             <a href="#">
                 <i class="icon-cog icon-large"></i>
             </a>
-            <a href="#">
+            <a href="includes/handlers/logout.php">
                 <i class="icon-signout icon-large"></i>
             </a>
             
